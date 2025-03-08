@@ -2,7 +2,6 @@ from cbpi.api import *
 from cbpi.api.base import CBPiBase
 from cbpi.api.property import Property
 from cbpi.api.decorator import parameters
-from cbpi.controller.kettle_logic import CBPiKettleLogic
 import asyncio
 from asyncio import tasks
 import logging
@@ -16,7 +15,7 @@ import datetime
              Property.Select(label="SampleTime", options=[2,5], description="PID Sample time in seconds. Default: 5 (How often is the output calculation done)"),
              Property.Sensor(label="RIMS Sensor", description="Sensor de temperatura da resistência RIMS")])
 
-class PIDRIMS(CBPiKettleLogic):
+class PIDRIMS(CBPiBase):
 
     async def on_start(self):
         self.heat_percent_old = 0
