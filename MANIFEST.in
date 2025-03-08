@@ -1,2 +1,2 @@
-include cbpi4-PIDBoil/config.yaml
-recursive-include cbpi4-PIDBoil/static *
+include cbpi4-PIDRIMS/config.yaml
+recursive-include cbpi4-PIDRIMS/static *
