@@ -40,7 +40,7 @@ class PIDRIMS(CBPiKettleLogic):
             self.heater_actor = self.cbpi.actor.find_by_id(self.heater)
             self.rims_sensor = self.props.get("RIMS Sensor", None)
                        
-            pid = PIDArduino(sampleTime, p, i, d, 0, 1)
+            pid = PIDArduino(sampleTime, p, i, d, 0, 100)
             heat_percent_old = 0
 
             while self.running == True:
