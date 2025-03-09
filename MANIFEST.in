@@ -1,2 +1,0 @@
-include cbpi4-PIDRIMS/config.yaml
-recursive-include cbpi4-PIDRIMS/static *
